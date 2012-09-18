@@ -15,6 +15,9 @@ helpers do
 end
 
 get "/" do
+  # Oh, yeah, this is like /totally/ the most unique thing evar.
+  # It's got, like, two randoms.
+  # Replace me with something better.
   @code = add_check_didget(((Time.now.to_i & 9999999) ^ rand(9999999)).to_s)
   erb :'index.html'
 end
