@@ -15,7 +15,7 @@ helpers do
 end
 
 get "/" do
-  @code = add_check_didget((Time.now.to_i ^ rand(99999999999)).to_s)
+  @code = add_check_didget(((Time.now.to_i & 9999999) ^ rand(9999999)).to_s)
   erb :'index.html'
 end
 
