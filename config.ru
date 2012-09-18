@@ -41,7 +41,7 @@ post "/conference/welcome" do
   else
 
     Twilio::TwiML::Response.new do |r|
-      r.Say "I'm sorry, that does not appear to be a valid conference code".
+      r.Say "I'm sorry, that does not appear to be a valid conference code"
       r.Gather :timeout => "30", :finishOnKey => "#" do |d|
         d.Say 'please enter your conference code followed by the hash key'
       end
