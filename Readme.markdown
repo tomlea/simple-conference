@@ -1,4 +1,4 @@
-= Simple teleconferencing system made with twilio in about 30 mins.
+## Simple teleconferencing system made with twilio in about 30 mins.
 
 I raged out at work over people constantly emailing about conference lines.
 
@@ -14,9 +14,9 @@ So I wrote this. It works.
 It uses twilio, and lets people conference together based on a one time,
 randomly assigned, *totally* random, and definitely not vulnerable key system.
 
-=== Setup
+### Setup
 Create a twilio account, and point it at http://YOURHOST/conference/welcome.
 
-=== Smallprint:
+### Small print:
 Any claims about this being awesome are lies. It's totally insecure.
 
